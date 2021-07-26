@@ -8,6 +8,14 @@ items.forEach(item =>{
             tampil.pop()
             tampil = tampil.join('')
             hasil.innerHTML = tampil
+        }else if((this.textContent === '-' && tampil === '') || (this.textContent === '+' && tampil === '') || (this.textContent === 'x' && tampil === '') || (this.textContent === '/' && tampil === '')){
+            tampil = ''
+        }else if(this.textContent === '+/-'){
+            tampil += '-'
+            hasil.innerHTML = tampil
+        }else if(this.textContent === 'C'){
+            tampil = ''
+            hasil.innerHTML = tampil
         }else{
             tampil += this.textContent
             hasil.innerHTML = tampil
@@ -96,7 +104,8 @@ samaDengan.addEventListener('click', function(){
         }
     }
 
-
-    akhir.innerHTML = `= ${nilai.join('')}`
+    if(nilai.length != ''){
+        akhir.innerHTML = `= ${nilai.join('')}`
+    }
 })
 
