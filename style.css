@@ -59,30 +59,42 @@ table {
 .hasil{
 	border: 1px solid;
 	height: 80px;
+	word-wrap: break-word;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-
+.hasil .tampil{
+	padding: 3px;
+	height: 40px;
+	font-size: 19px;
+}
+.hasil .akhir{
+	padding: 2px;
+	height: 25px;
+	font-size: 18px;
+}
 /* tombol */
 .tombol{
-	border: 1px solid;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
-.tombol .item{
+.tombol .item, .tombol .nol, .tombol .hapusSekaligus, .tombol .samaDengan, .tombol .negatif{
 	text-align: center;
-	width: 80px;
-	height: 80px;
-	border: 1px solid;
+	width: 82.5px;
+	height: 81px;
 	line-height: 80px;
 	background-color: salmon;
 	font-size: 17px;
 	cursor: pointer;
+	border: 1px solid;
 }
-
-.tombol .bagi, .tombol .kali, .tombol .kurang, .tombol .tambah, .tombol .samaDengan{
+.tombol .operator{
 	background-color: red;
 }
 .tombol .nol{
-	width: 162px;
+	width: 165px;
 }
