@@ -43,15 +43,25 @@ table {
 }
 
 /* style.css */
-.cal{
-	border: 1px solid;
+.utama{
+	background-image: url(./kelly-sikkema-Oz_J_FXKvIs-unsplash.jpg);
+	background-position: 10% 80%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.kalkulator{
+	border: 2px solid rgb(87, 170, 238);
 	width: 330px;
-	margin: 40px auto;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	background-color: pink;
+	background:   linear-gradient(to left ,rgba(15, 226, 226, 0.5), rgba(91, 75, 119, 0.5));
+	box-shadow: 6px 3px 10px 0px rgba(0, 0, 0, 0.3);
 }
-.cal p{
+.kalkulator p{
 	margin: 5px;
 	text-align: right;
 	font-size: 17px;
@@ -60,7 +70,6 @@ table {
 
 /* hasilnya */
 .hasil{
-	border: 1px solid;
 	height: 80px;
 	word-wrap: break-word;
 	padding: 5px;
@@ -87,18 +96,24 @@ table {
 	justify-content: center;
 	align-items: center;
 }
-.tombol .item, .tombol .nol, .tombol .samaDengan{
+.tombol .item, .tombol .samaDengan{
 	text-align: center;
 	width: 82.5px;
 	height: 81px;
 	line-height: 80px;
-	background-color: salmon;
+	background-color: rgb(200, 114, 250);
 	font-size: 17px;
 	cursor: pointer;
 	border: 1px solid;
 }
+.tombol .b{
+	border-left: none;
+}
 .tombol .operator{
-	background-color: red;
+	border-right: none;
+}
+.tombol .bawah{
+	border-bottom: none;
 }
 .tombol .nol{
 	width: 165px;

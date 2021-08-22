@@ -16,6 +16,8 @@ items.forEach(item =>{
         }else if(this.textContent === 'C'){
             tampil = ''
             hasil.innerHTML = tampil
+
+            document.querySelector('.akhir').innerHTML = ''
         }else{
             tampil += this.textContent
             hasil.innerHTML = tampil
@@ -107,5 +109,7 @@ samaDengan.addEventListener('click', function(){
     if(nilai.length != ''){
         akhir.innerHTML = `= ${nilai.join('')}`
     }
-})
 
+
+
+})
